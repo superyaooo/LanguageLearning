@@ -1,0 +1,1 @@
+code examples created for purpose of experimenting and re-using.
