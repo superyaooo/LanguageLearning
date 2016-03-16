@@ -1,0 +1,185 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<link href="form_template.css" rel="stylesheet" type="text/css"/>
+	</head>
+	<body>
+		<h2>Form template example</h2>
+		<h4>This is an attempt to make a generic standardized form stylesheet with different column, row options. It is based on Tyler's beautiful forms.</h4>
+		<ul>
+			<li>For double column rows, elements are "inline-block", instead of table cells</li>
+			<li>The space between two columns won't change in case of different label lengths</li>
+			<li>element width is by percentage%</li>
+			
+		</ul>
+		<div class="form">
+			<fieldset>
+				<legend>Student Information</legend>
+				<div class="row">
+					<div class="col-double">
+						<label>First Name:</label>
+						<input>
+					</div>
+					<div class="col-double">
+						<label>Last Name(Family):</label>
+						<input>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-double">
+						<label>I'm a long label:</label>
+						<input>
+					</div>
+					<div class="col-double">
+						<label>I'm shorter:</label>
+						<input>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-double">
+						<label>Address:</label>
+						<input>
+					</div>
+					<div class="col-double">
+						<label>City:</label>
+						<input>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-double">
+						<label>State:</label>
+						<input>
+					</div>
+					<div class="col-double">
+						<label>Zip:</label>
+						<input>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-double">
+						<label>Email:</label>
+						<input>
+					</div>
+					<div class="col-double">
+						<label>CC Student ID:</label>
+						<input>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-single">
+						<label>Single Column:</label>
+						<input>(Long input box)
+					</div>
+				</div>
+				<div class="block">
+					<label>I'm a very long label for a single input box, OMG:</label>
+					<div class="col-single">
+						<input>
+					</div>
+				</div>
+				<div class="block">
+						<label>Describe some description and describe it well, make sure to make it pretty. Use polite and civilized language, please. Oh, and also, pay attenton to the punctuation. Use proper grammar, or go back to school:</label>
+						<textarea rows="4"></textarea>
+				</div>
+			</fieldset>
+			
+			<fieldset>
+				<legend>Other Information</legend>
+				<div class="block">
+					<p>I'm a paragraph. I'm a long paragraph. I'm a very long paragraph. I'm a paragraph. I'm a long paragraph. I'm a very long paragraph. I'm a paragraph. I'm a long paragraph. I'm a very long paragraph. I'm a paragraph. I'm a long paragraph. I'm a very long paragraph.</p>
+					<p>I'm another paragraph. And I don't care how long I am.</p>
+					<br />
+				</div>
+				<div class="row">
+					<div class="col-single">
+						<label>Gender:</label>
+						<div class="radio-group">
+							<input type="radio" name="gender" value="Male" id="rd1"><label for="rd1">Male</label>
+							<input type="radio" name="gender" value="Female" id="rd2"><label for="rd2">Female</label>
+							<input type="radio" name="gender" value="Other" id="rd3"><label for="rd3">Other</label>
+							<input type="radio" name="gender" value="Prefer not to disclose" id="rd4"><label for="rd4">Prefer not to disclose</label>
+						</div>
+					</div>
+				</div>
+				<div class="block">
+					<label>I'm a very long label for a radio button group, yes or no:</label>
+					<div class="radio-group">
+						<input type="radio" name="long label radio" value="yes" id="rd5">
+						<label for="rd5">Yes</label>
+						<input type="radio" name="long label radio" value="no" id="rd6">
+						<label for="rd6">No</label>
+					</div>
+				</div>
+				<br/>
+				<div class="row">
+					<div class="col-double">
+						<label>Dropdown 1:</label>
+						<select name="cats">
+							<option value="big cat">big cat</option>
+							<option value="small cat">small cat</option>
+							<option value="fat cat">fat cat</option>
+							<option value="cat">cat</option>
+						</select>
+					</div>
+					<div class="col-double">
+						<label>Dropdown 2</label>
+						<select name="movies">
+							<option value="Friends">Friends</option>
+							<option value="Lost In Translation">Lost In Translation</option>
+							<option value="Ghost Busters">Ghost Busters</option>
+						</select>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-single">
+						<label>long dropdown 1:</label>
+						<select name="long select">
+							<option value="lkdfjakfdjlafjlakjlkljkfhafla">kldjflajlkfjkdljfklajflafjlaflakjfljfldjflajflajfjflafjaljkjhdfkafklajljkalfjlafj</option>
+							<option>lkadfjldjflajf;ajfdljflajfl</option>
+							<option>jlkfjdflkdadjflkjflkjflajfddlkjflajfdladjfdlafjlafjlaj</option>
+						</select>
+					</div>
+				</div>
+				<div class="row">
+					<div class="long-lbl-col">
+						<label>I'm a very very very long label dropdown 2: </label>
+						<select name="long lbl ddl">
+							<option>lkfjalkfjlksajflajflajflajflajflajflak</option>
+							<option>lkfjalkfjlksajflajflajflakfdlakdjdflajflajflajflajflak</option>
+						</select>
+					</div>
+				</div>
+				<div class="block">
+					<label>Long long long long long long Label for long dropdown 3:</label>
+					<select name="long labled long select">
+						<option>kldjflakjflakljlkdjljlsjflajflsajflasjflafjalfjlajfl
+							ajflafjal</option>
+						<option>kdfkajflajfla</option>
+					</select>
+				</div>
+				<br/>
+				<div class="row">
+					<div class="col-single">
+						<label>Checkbox 1: </label>
+						<div class="chk-group">
+							<input type="checkbox" id="chk1"><label for="chk1">Mon</label>
+							<input type="checkbox" id="chk2"><label for="chk2">Tue</label>
+							<input type="checkbox" id="chk3"><label for="chk3">Wed</label>
+							<input type="checkbox" id="chk4"><label for="chk4">Thurs</label>
+							<input type="checkbox" id="chk5"><label for="chk5">Fri</label>
+							<input type="checkbox" id="chk6"><label for="chk6">Sat</label>
+						</div>
+					</div>
+				</div>
+				<div class="block">
+					<label>I'm a very long label for a check box list, check the options that apply:</label>
+					<div class="chk-group">
+						<input type="checkbox" id="chk7"><label for="chk7">1</label>
+						<input type="checkbox" id="chk8"><label for="chk8">2</label>
+						<input type="checkbox" id="chk9"><label for="chk9">3</label>
+					</div>
+				</div>
+			</fieldset>
+		</div>
+	</body>
+</html>

@@ -1,0 +1,68 @@
+body {
+	padding: 1em;
+}
+
+.form {
+	width: 80%;
+	line-height: 1.5em;
+}
+
+.row, .block {
+	width: 98%;
+	padding-left: 2%;
+}
+
+.col-double {
+	width: 40%;
+	display: inline-block;
+	
+}
+
+.col-double > label{
+	width: 40%;
+	display: inline-block;
+	font-weight: bold;
+}
+
+.col-double > input {
+	width: 50%;
+}
+
+.col-single > label{
+	font-weight: bold;
+	width: 16%;
+	display: inline-block;
+}
+
+.col-single > input {
+	width: 40%;
+}
+
+.block > label {
+	display: block;
+	font-weight: bold;
+	width: 85%;
+}
+
+.block > textarea {
+	width: 70%;
+}
+
+.radio-group, .chk-group {
+	width: 80%;
+	display: inline-block;
+}
+
+.radio-group label, .chk-group label {
+	padding-right: 2em;
+}
+
+.radio-group input, .chk-group input {
+	margin-right: .5em;
+}
+
+.long-lbl-col label {
+	font-weight: bold;
+	width: 40%;
+	display: inline-block;
+}
