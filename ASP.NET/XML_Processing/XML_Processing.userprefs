@@ -1,0 +1,14 @@
+﻿<Properties StartupItem="XML_Processing.csproj">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Default.aspx.cs">
+    <Files>
+      <File FileName="Default.aspx" Line="17" Column="84" />
+      <File FileName="Default.aspx.cs" Line="82" Column="4" />
+    </Files>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.ItemProperties.XML__Processing PreferredExecutionTarget="MonoDevelop.Default" />
+</Properties>

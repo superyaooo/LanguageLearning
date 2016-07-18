@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<Employees>
+	<Employee>
+		<id>1</id>
+		<firstName>Dougen</firstName>
+		<lastName>Nash</lastName>
+		<startDate>02/17/2013</startDate>
+	</Employee>
+	<Employee>
+		<id>2</id>
+		<firstName>Johny</firstName>
+		<lastName>Walker</lastName>
+		<startDate>06/20/2016</startDate>
+	</Employee>
+	<Employee>
+		<id>3</id>
+		<firstName>McD</firstName>
+		<lastName>Stone</lastName>
+		<startDate>01/23/2001</startDate>
+	</Employee>
+</Employees>
