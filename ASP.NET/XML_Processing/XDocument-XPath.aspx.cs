@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Web;
 using System.Web.UI;
 using System.Text;
@@ -13,9 +13,7 @@ namespace XML_Processing
 		public void ReadNodes(object sender, EventArgs args)
 		{
 			StringBuilder sb = new StringBuilder();
-			XDocument xDoc;
-
-			xDoc = XDocument.Load("App_Data/employees.xml");
+			XDocument xDoc = XDocument.Load("App_Data/employees.xml");
 
 			var list = xDoc.XPathSelectElements("//Employee");   // can also use "/Employees/Employee"
 			foreach (XElement entry in list)
@@ -25,16 +23,12 @@ namespace XML_Processing
 				sb.AppendFormat("FirstName={0}", entry.Element("firstName").Value);
 				sb.Append("<br />");
 			}
-
-			lblResult.Text = sb.ToString();
 		}
 
 		public void ReadAllNodes(object sender, EventArgs args) 
 		{
 			StringBuilder sb = new StringBuilder();
-			XDocument xDoc;
-
-			xDoc = XDocument.Load("App_Data/employees.xml");
+			XDocument xDoc = XDocument.Load("App_Data/employees.xml");
 
 			var list = xDoc.XPathSelectElements("//Employee");
 			foreach (XElement entry in list) 
@@ -45,8 +39,6 @@ namespace XML_Processing
 					sb.AppendFormat("{0}, {1} <br />", item.Name, entry.Element(item.Name).Value);
 				}
 			}
-
-			lblResult.Text = sb.ToString();
 		}
 
 		public void GetAttributes(object sender, EventArgs args) 
@@ -62,21 +54,16 @@ namespace XML_Processing
 				sb.AppendFormat("id = {0} <br />", entry.Attribute("id").Value);
 				sb.AppendFormat("First Name = {0} <br />", entry.Element("firstName").Value);
 			}
-
-			lblResult.Text = sb.ToString();
 		}
 
 		public void FindByAttribute(object sender, EventArgs args) 
 		{
 			StringBuilder sb = new StringBuilder();
-			XDocument xDoc;
-
-			xDoc = XDocument.Load("App_Data/employeesAttributes.xml");
+			XDocument xDoc = XDocument.Load("App_Data/employeesAttributes.xml");
 
 			var entry = xDoc.XPathSelectElement("//Employee[@id='2']");
 			foreach (XElement child in entry.Elements()) 
 			{
-				//sb.AppendFormat("{0} - {1} <br />", child.Name, entry.Element(child.Name).Value);
 				 sb.AppendFormat("{0} - {1} <br />", child.Name, child.Value);
 			}
 
@@ -91,8 +78,6 @@ namespace XML_Processing
 				}
 			}
 			*/
-
-			lblResult.Text = sb.ToString();
 		}
 
 	}
