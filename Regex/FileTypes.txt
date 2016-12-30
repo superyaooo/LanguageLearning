@@ -1,0 +1,8 @@
+Allowed files: JPG, GIF, PNG, PDF
+(?i:^.+\.(png|jpe?g|pdf|gif))$
+
+File Upload File type validator:
+<asp:FileUpload ID="uploader" runat="server" />
+<asp:RegularExpressionValidator runat="server" ControlToValidate="uploader" SetFocusOnError="true" 
+      ErrorMessage="Entry #1 - Allowed file types for entry image: JPG, GIF, PNG, PDF." 
+      ValidationExpression="(?i:^.+\.(png|jpe?g|pdf|gif))$" />
