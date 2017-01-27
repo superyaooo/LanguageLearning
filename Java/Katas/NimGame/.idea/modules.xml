@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/Reverse String.iml" filepath="$PROJECT_DIR$/Reverse String.iml" />
+      <module fileurl="file://$PROJECT_DIR$/NimGame.iml" filepath="$PROJECT_DIR$/NimGame.iml" />
     </modules>
   </component>
 </project>
