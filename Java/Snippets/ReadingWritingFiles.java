@@ -1,8 +1,10 @@
 /**
-* Reading & Writing files with java.nio.file
-*
-* java.nio.file - preferred package for files
-*/
+ * Reading & Writing files with java.nio.file
+ *
+ * java.nio.file - preferred package for files
+ *
+ */
+
 
 // java.io.file classes - old way to process files; now deprecated
 // Buffered Streams - used for efficiency, line break support

@@ -1,7 +1,8 @@
 /**
-* StringJoiner
-*
-*/
+ * StringJoiner
+ *
+ */
+
 
 StringJoiner sj = new StringJoiner(", ");
 sj.add("alpha");

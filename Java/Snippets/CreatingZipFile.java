@@ -1,7 +1,6 @@
 /**
-* Create a zip file system
-*
-*/
+ * Create a zip file system
+ */
 
 import java.io.BufferedWriter;
 import java.io.IOException;
