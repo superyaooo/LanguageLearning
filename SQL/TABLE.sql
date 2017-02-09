@@ -4,8 +4,8 @@ CREATE TABLE Products
 	vend_id		CHAR(10)		NOT NULL,
 	prod_name	CHAR(254)		NOT NULL,
 	prod_price	DECIMAL(8,2)	NOT NULL,
-	prod_desc	VARCHAR(1000)	NULL		-- replace VARCHAR with TEXT for MySQL
-);											-- remove NULL from final column for DB2
+	prod_desc	VARCHAR(1000)	NULL			-- replace VARCHAR with TEXT for MySQL
+);												-- remove NULL from final column for DB2
 
 
 -- table with NULL and NOT NULL columns; NULL is default setting for column
