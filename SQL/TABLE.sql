@@ -5,7 +5,7 @@ CREATE TABLE Products
 	prod_name	CHAR(254)		NOT NULL,
 	prod_price	DECIMAL(8,2)	NOT NULL,
 	prod_desc	VARCHAR(1000)	NULL			-- replace VARCHAR with TEXT for MySQL
-);												-- remove NULL from final column for DB2
+);											-- remove NULL from final column for DB2
 
 
 -- table with NULL and NOT NULL columns; NULL is default setting for column
@@ -27,7 +27,7 @@ CREATE TABLE OrderItems
 	order_item		INTEGER			NOT NULL,
 	prod_id 		CHAR(10)		NOT NULL,
 	quantity		INTEGER			NOT NULL	DEFAULT 1,
-	item_price		DECIMAL(8,2)	NOT NULL
+	item_price		DECIMAL(8,2)    NOT NULL
 );
 
 
