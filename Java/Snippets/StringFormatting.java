@@ -9,6 +9,7 @@
  * s - String   (General)
  *
  */
+
 int a = 13, b = 1, c = 5;
 
 String s = String.format("My dogs are %d, %d, and %d years old", a, b, c);
@@ -26,6 +27,7 @@ String s2 = String.format("Average age between each is %.1f years", avgDiff);
  *      #   0   -	,	space	+	(
  *
  */
+
 // # include radix
 String s1 = String.format("%d", 32);   // result: 32
 String s2 = String.format("%o", 32);   // result: 40
