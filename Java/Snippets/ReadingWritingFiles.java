@@ -25,3 +25,11 @@ try(BufferedReader br = Files.newBufferedReader(Paths.get("data.txt"))){
 List<String> lines = Files.readAllLines(Paths.get("data.txt"));
 for(String line:lines)
 	System.out.println(line);
+
+
+// Write formatted content to a stream
+BufferedWriter writer = Files.newBufferedWriter(Paths.get("myFile.txt"));
+try(Formatter f = new Formatter(writer)){
+	f.format("My nephews are %d, %d, and %d years old", 2, 3, 7);
+	f.format("The average age between each is %.1f years", avgDiff);
+}

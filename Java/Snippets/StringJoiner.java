@@ -3,7 +3,6 @@
  *
  */
 
-
 StringJoiner sj = new StringJoiner(", ");
 sj.add("alpha");
 sj.add("theta");
