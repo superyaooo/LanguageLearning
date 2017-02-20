@@ -1,4 +1,4 @@
-package com.monotonic.testing.m2;
+package com.monotonic.testing.m3;
 
 /**
  * An individual coffee that has been served.

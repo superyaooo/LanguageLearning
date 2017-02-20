@@ -1,10 +1,10 @@
-package com.monotonic.testing.m2;
+package com.monotonic.testing.m3;
 
 /**
  * Describes the type of coffee that we're going to serve.
  */
 public enum CoffeeType {
-    Espresso(7, 0),
+    Espresso(8, 0),
     Latte(7, 227),
     FilterCoffee(10, 0);
 
