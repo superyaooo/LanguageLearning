@@ -12,9 +12,9 @@ public class WordWrap {
 
         int split = lineLength;
 
-        while (length > split) {
+        while(length > split){
             accumulator.append('\n');
-            accumulator.append(inputLine, split, min(length, split + lineLength));
+            accumulator.append(inputLine, split,  min(length, split + lineLength));
             split += lineLength;
         }
 
