@@ -1,7 +1,5 @@
 package com.manning.spock.chapter1
 
-import spock.lang.*
-
 class AdderSpec extends spock.lang.Specification{
 	def "Adding two numbers to return the sum"() {
 		when: "a new Adder class is created"

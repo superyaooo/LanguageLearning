@@ -1,8 +1,8 @@
 package com.manning.spock.chapter1;
 
-import static org.junit.Assert.assertEquals;
-
 import org.junit.Test;
+
+import static groovy.util.GroovyTestCase.assertEquals;
 
 public class AdderTest {
 	
