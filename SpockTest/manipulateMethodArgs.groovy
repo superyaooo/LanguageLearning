@@ -7,6 +7,7 @@
 * part of an object instance is used as mock argument
 */
 1 * creditCardSevice.sale(1550, { client -> client.vip == false})
+1 * creditCardService.capture({myToken -> myToken.endsWith("sample")}, customer)
 
 /*
 * use full closures
