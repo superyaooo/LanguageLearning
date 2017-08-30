@@ -20,7 +20,7 @@ Map<String, Integer> result = unsortMap.entrySet().stream()
                                 (oldValue, newValue) -> oldValue, LinkedHashMap::new));
 
 // sort by values
-Map<String, Integer> result = unsortMap.entrySet().stream
+Map<String, Integer> result = unsortMap.entrySet().stream()
                             .sorted(Map.Entry.comparingByValue(Comparator.reverseOrder()))
                             .collect(Collectors.toMap(Map.Entry::getKey, Map.Entry::getValue,
                                 (oldValue, newValue) -> oldValue, LinkedHashMap::new));
