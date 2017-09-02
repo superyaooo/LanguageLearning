@@ -4,7 +4,7 @@ XmlParser - eager evaluation;
 XmlSlurper - lazy evaluation;
            - only portions loaded into memoery before read; better for large documents
 */
-def file = new File('/data/fells_loop.gpx')
+def file = new File('./data/fells_loop.gpx')
 
 def slurper = new XmlSlurper()
 def gpx = slurper.parse(file)
@@ -15,6 +15,17 @@ println gpx.desc    // print out <desc> value of xml
 // get attributes value of xml
 println gpx.@version
 println gpx.@creator
+
+// same result when using groovy .with
+gpx.with {
+    println name
+    println desc
+
+    println attributes()['version']
+    println attributes()['creator']
+}
+
+
 // get children elements
 gpx.rte.rtept.each {
     println it.@lat
