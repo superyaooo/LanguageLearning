@@ -28,3 +28,13 @@ Map<String, Long> counting = items.stream().collect(
                             );      // printout: {banana=2, pear=2, bloodorange=1}
 Map<String, Integer> sum = items.stream().collect(
                                 Collectors.groupingBy(Item::getName, Collectors.summingInt(Item::getQty)));
+
+
+/*
+.groupingBy and .mapping
+*/
+Map<BigDecimal, Set<String>> result = items.stream.collect(
+                                    Collectors.groupingBy(Item::getPrice,       // group by price
+                                        Collectors.mapping(Item::getName, Collectors.toSet())   // .mapping to convert List<Item> to Set<String>
+                                    )
+                                );      // printout: { 5.99=[pear], 1.99=[banana], 7.99=[bloodorange] }
