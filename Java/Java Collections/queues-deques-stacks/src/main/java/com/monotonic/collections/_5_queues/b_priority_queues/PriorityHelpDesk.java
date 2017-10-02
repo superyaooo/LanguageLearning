@@ -10,10 +10,9 @@ import java.util.Queue;
 
 public class PriorityHelpDesk
 {
-    private static final Comparator<Enquiry> BY_CATEGORY = new Comparator<Enquiry>()
-    {
-        public int compare(final Enquiry o1, final Enquiry o2)
-        {
+    private static final Comparator<Enquiry> BY_CATEGORY = new Comparator<Enquiry>() {
+        @Override
+        public int compare(Enquiry o1, Enquiry o2) {
             return o1.getCategory().compareTo(o2.getCategory());
         }
     };

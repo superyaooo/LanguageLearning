@@ -14,27 +14,25 @@ public class Java8Enhancements
         idToProduct.put(2, ProductFixtures.floorPanel);
         idToProduct.put(3, ProductFixtures.window);
 
-        Product result = idToProduct.getOrDefault(10, defaultProduct);
-        System.out.println(result);
-        System.out.println(idToProduct.get(10));
-        System.out.println();
+//        Product result = idToProduct.getOrDefault(10, defaultProduct);
+//        System.out.println(result);
+//        System.out.println(idToProduct.get(10));
+//        System.out.println();
 
-        result = idToProduct
-            .computeIfAbsent(10, (id) -> new Product(id, "Custom Product", 10));
-        System.out.println(result);
-        System.out.println(idToProduct.get(10));
-        System.out.println();
+//        Product result = idToProduct.replace(1, new Product(1, "Big Door", 50));
+//        System.out.println(result);
+//        System.out.println(idToProduct.get(4));
 
-        result = idToProduct.replace(1, new Product(1, "Big Door", 50));
-        System.out.println(result);
-        System.out.println(idToProduct.get(1));
-        System.out.println();
-
-        idToProduct.replaceAll((key, oldProduct) ->
-            new Product(oldProduct.getId(), oldProduct.getName(), oldProduct.getWeight() + 10));
+//        idToProduct.replaceAll((id, oldProduct) ->
+//                new Product(id, oldProduct.getName(), oldProduct.getWeight() + 10));
         System.out.println(idToProduct);
-        System.out.println();
 
-        idToProduct.forEach((key, value) -> System.out.println(key + " -> " + value));
+//        Product result = idToProduct.computeIfAbsent(10, (id) -> new Product(id, "Custom Product", 10));
+//        System.out.println(result);
+//        System.out.println(idToProduct.get(10));
+
+        idToProduct.forEach((key, value) -> {
+            System.out.println(key + " -> " + value);
+        });
     }
 }

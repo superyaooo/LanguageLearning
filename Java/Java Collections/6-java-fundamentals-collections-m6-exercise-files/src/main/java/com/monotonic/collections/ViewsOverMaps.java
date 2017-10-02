@@ -19,14 +19,11 @@ public class ViewsOverMaps
 
         final Set<Integer> ids = idToProduct.keySet();
         System.out.println(ids);
-        System.out.println();
 
         ids.remove(1);
         System.out.println(ids);
         System.out.println(idToProduct);
         System.out.println();
-
-        // ids.add(1);
 
         final Collection<Product> products = idToProduct.values();
         System.out.println(products);
@@ -37,14 +34,11 @@ public class ViewsOverMaps
         System.out.println(idToProduct);
         System.out.println();
 
-        // products.add(ProductFixtures.floorPanel);
-
         final Set<Map.Entry<Integer, Product>> entries = idToProduct.entrySet();
-        for(Map.Entry<Integer, Product> entry : entries)
-        {
-            System.out.println(entry);
+        for(Map.Entry<Integer, Product> entry : entries) {
+            System.out.println(entry.getKey() + " -> " + entry.getValue());
+            entry.setValue(ProductFixtures.floorPanel);
         }
-
-        idToProduct.forEach((key, value) -> System.out.println(key + " -> " + value));
+        System.out.println(idToProduct);
     }
 }
