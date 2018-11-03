@@ -1,6 +1,0 @@
-/Users/yaowang/Projects/LanguageLearning/C#/ACM/ACM.BL/bin/Debug/ACM.BL.dll
-/Users/yaowang/Projects/LanguageLearning/C#/ACM/ACM.BL/bin/Debug/ACM.BL.pdb
-/Users/yaowang/Projects/LanguageLearning/C#/ACM/ACM.BL/obj/Debug/ACM.BL.csprojAssemblyReference.cache
-/Users/yaowang/Projects/LanguageLearning/C#/ACM/ACM.BL/obj/Debug/ACM.BL.csproj.CoreCompileInputs.cache
-/Users/yaowang/Projects/LanguageLearning/C#/ACM/ACM.BL/obj/Debug/ACM.BL.dll
-/Users/yaowang/Projects/LanguageLearning/C#/ACM/ACM.BL/obj/Debug/ACM.BL.pdb
