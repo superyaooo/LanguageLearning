@@ -1,0 +1,10 @@
+﻿<Properties StartupConfiguration="{18183DEC-85A1-4333-9673-77FE3984E025}|Unit Tests">
+  <MonoDevelop.Ide.Workbench />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MultiItemStartupConfigurations />
+  <MonoDevelop.Ide.ItemProperties.Tests.ACM.BLTest PreferredExecutionTarget="MonoDevelop.Default" />
+</Properties>

@@ -8,18 +8,17 @@ public class LegacyCode
 {
     public static void main(String[] args)
     {
-        List<Object> values = new ArrayList();
+        List values = new ArrayList();      // raw types
         values.add("abc");
         values.add(1);
         values.add(new Object());
 
-        List rawtype = values;
-        List<String> strings = rawtype;
+        List<Integer> integers = new ArrayList<>();
+        integers.add(1);
+        integers.add(2);
 
-        for(String element : strings)
-        {
-            System.out.println(element);
-        }
+        legacyMethod(integers);
+
 
         Iterator iterator = values.iterator();
         while (iterator.hasNext())
@@ -27,5 +26,9 @@ public class LegacyCode
             Object element = iterator.next();
             System.out.println(element);
         }
+    }
+
+    public static void legacyMethod(List list) {
+
     }
 }
