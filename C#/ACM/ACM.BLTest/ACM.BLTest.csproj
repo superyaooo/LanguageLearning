@@ -33,6 +33,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="CustomerTest.cs" />
+    <Compile Include="CustomerRepositoryTest.cs" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\ACM.BL\ACM.BL.csproj">

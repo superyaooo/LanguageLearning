@@ -1,9 +1,21 @@
-﻿using System;
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
+
 namespace ACM.BL
 {
     public class Customer
     {
+        public Customer() : this(0)
+        {
+            // only needed if intend to add code inside, or add extra constructors
+            // :this(0) calls the constructor below to create an AddressList
+        }
+
+        public Customer(int customerId)
+        {
+            this.CustomerId = customerId;
+            AddressList = new List<Address>();
+        }
+
         /*
         private string _lastName;
         public string LastName 
@@ -25,6 +37,8 @@ namespace ACM.BL
         public string FirstName { get; set; }
         public string EmailAddress { get; set; }
         public int CustomerId { get; private set; }
+        public List<Address> AddressList { get; set; }
+        public int CustomerType { get; set; }
 
         public string FullName
         {
@@ -43,17 +57,7 @@ namespace ACM.BL
             }
         }
 
-        public Customer()
-        {
-            // only needed if intend to add code inside, or add extra constructors
-        }
-
-        public Customer(int customerId)
-        {
-            this.CustomerId = customerId;
-        }
-
-        public bool Validate() 
+        public bool Validate()
         {
             var isValid = true;
 
@@ -61,21 +65,6 @@ namespace ACM.BL
             if (string.IsNullOrWhiteSpace(EmailAddress)) isValid = false;
 
             return isValid;
-        }
-
-        public bool Save() 
-        {
-            return true;
-        }
-
-        public Customer Retrieve(int customerId) 
-        {
-            return new Customer();
-        }
-
-        public List<Customer> Retrieve() 
-        {
-            return new List<Customer>();
         }
     }
 }

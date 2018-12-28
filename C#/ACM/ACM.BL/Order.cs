@@ -1,4 +1,6 @@
 ﻿using System;
+using System.Collections.Generic;
+using NUnit.Framework.SyntaxHelpers;
 namespace ACM.BL
 {
     public class Order
@@ -14,21 +16,19 @@ namespace ACM.BL
 
         public DateTimeOffset? OrderDate { get; set; }
         public int OrderId { get; private set; }
-
-        public Order Retrieve(int orderId) 
-        {
-            return new Order();
-        }
-
-        public bool Save() 
-        {
-            return true;
-        }
+        public List<OrderItem> OrderItems { get; set; }
+        public int CustomerId { get; set; }
+        public int ShippingAddressId { get; set; }
 
         public bool Validate() 
         {
             var isValid = OrderDate == null;
             return isValid;
+        }
+
+        public override string ToString()
+        {
+            return OrderDate.Value.Date + " (" + OrderId + ")";
         }
     }
 }

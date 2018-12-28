@@ -1,7 +1,7 @@
 ﻿using System;
 namespace ACM.BL
 {
-    public class Product
+    public class Product : EntityBase
     {
         public Product()
         {
@@ -17,17 +17,7 @@ namespace ACM.BL
         public string ProductDescription { get; set; }
         public string ProductName { get; set; }
 
-        public Product Retrieve(int productId) 
-        {
-            return new Product();
-        }
-
-        public bool Save() 
-        {
-            return true;
-        }
-
-        public bool Validate() 
+        public override bool Validate() 
         {
             var isValid = true;
 
@@ -35,6 +25,11 @@ namespace ACM.BL
             if (CurrentPrice == null) isValid = false;
 
             return isValid;
+        }
+
+        public override string ToString()
+        {
+            return ProductName;
         }
     }
 }
